@@ -2,36 +2,47 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Order summary card</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 0.6875rem; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  Order Summary
+  <main class="card-container">
+    <div class="card">
+      <div class="card-header">
+        <img src="./images/illustration-hero.svg" alt="Illustration of a person happily listening and dancing to music" class="hero-img">
+      </div>
+      
+      <div class="card-body">
+        <h1 class="card-title">Order Summary</h1>
+        <p class="card-description">
+          You can now listen to millions of songs,<br class="m-none"> audiobooks, and podcasts on <br class="d-none">any device <br class="m-none"> anywhere you like!
+        </p>
 
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
+        <div class="plan-box">
+          <div class="plan-details">
+            <img src="./images/icon-music.svg" alt="" aria-hidden="true" class="plan-icon">
+            <div>
+              <span class="plan-name">Annual Plan</span>
+              <span class="plan-price">$59.99/year</span>
+            </div>
+          </div>
+          <a href="#" class="btn-change">Change</a>
+        </div>
 
-  Annual Plan
-  $59.99/year
+        <button class="btn-primary">Proceed to Payment</button>
+        <button class="btn-secondary">Cancel Order</button>
+      </div>
+    </div>
+  </main>
 
-  Change
-
-  Proceed to Payment
-  Cancel Order
-  
   <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener">Frontend Mentor</a>. Coded by <a href="https://github.com/Henrydevlab">Henry</a>.
   </footer>
 </body>
 </html>
